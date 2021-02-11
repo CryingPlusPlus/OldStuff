@@ -1,0 +1,25 @@
+div.sixtynine {
+    
+}
+input.floatingthing {
+    position: relative;
+    
+    display: flex;
+
+    min-height: 2em;
+
+    margin-top: 200px;
+
+    margin-bottom: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+    
+    z-index:1;
+}
+.floatthing:focus{
+    .sixtynine{
+        width:250px;
+    }
+}
+

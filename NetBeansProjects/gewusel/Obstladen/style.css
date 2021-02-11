@@ -1,0 +1,20 @@
+.hide{
+    display: none;
+}
+.login_style{
+    width: 25%;
+    height: 50%;
+    margin: auto;
+    
+}
+.navbarstyle{
+    background-color: #ffffff;
+    
+}
+.karte{
+    width: auto;
+    margin: 5%;
+}
+.karte_input{
+    width: 5rem;
+}

@@ -1,0 +1,12 @@
+from gpanel import *
+makeGPanel(-3, 3, -3, 3)
+lineWidth(5)
+setColor("red")
+line(-3, 0, +3, 0)
+line(0, +3, 0, -3)
+move(0,0)
+fillCircle(1)
+move(-3, 3)
+fillCircle(1)
+move(3,3)
+fillCircle(1)

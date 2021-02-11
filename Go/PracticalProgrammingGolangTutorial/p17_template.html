@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<header>
+	
+</header>
+<body>
+	<h1>
+		{{ .Title}}
+	</h1>
+	<table>
+			<tr>
+				<th>
+					Name
+				</th>
+				<th>
+					Alter
+				</th>
+			</tr>
+	{{range $name, $alter := .Nutzer}}
+		
+			<tr>
+				<td>
+					{{ $name }}
+				</td>
+				<td>
+					{{ $alter }}
+				</td>
+			</tr>
+		
+	{{ end }}
+	</table>
+</body>

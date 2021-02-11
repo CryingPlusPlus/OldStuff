@@ -1,0 +1,20 @@
+.header{
+    color: #2d0063;
+    
+}
+body{
+    background-color: #e6fbff;
+    color: #004861;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%; 
+    
+}
+.output{
+    height: 10rem;
+    word-wrap: break-word;
+    border: 1px solid #cfcfcf;
+    border-radius: 0.25rem;
+    
+}

@@ -1,0 +1,49 @@
+import os
+import gc
+# statement = 'print(\'Hello World!\')'
+
+# stringStatement = 'def func():\n    ' + statement
+
+# with open('temp.py', 'w') as temp:
+    # temp.write(stringStatement)
+# from temp import func
+# func()
+# os.system('del temp.py')
+
+
+class storage():
+    def __init__(self):
+        self.storage = []
+
+    def store(self, cmd):
+        cmd = 'def func():\n   ' + cmd
+        self.storage.append(cmd)
+
+    def showStorage(self):
+        for cmd in self.storage:
+            print(cmd)
+            print('')
+
+    def getStorageSize(self):
+        return len(self.storage)
+
+    def evaStatement(self, i):
+        with open('temp.py', 'w') as temp:
+            temp.write(self.storage[i])
+        try:
+            reload(temp)
+            import temp
+        except:
+            import temp
+
+        temp.func()
+        os.system('del temp.py')
+        gc.collect()
+        
+
+S = storage()
+S.store('print(\'Hello World\')')
+S.store('print(\'MoinMoin\')')
+# S.showStorage()
+S.evaStatement(1)
+S.evaStatement(0)
